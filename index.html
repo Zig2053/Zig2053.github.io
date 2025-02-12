@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Påmindelsesside</title>
+    <style>
+        /* Generel styling for siden */
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center; /* Centrerer horisontalt */
+            align-items: center; /* Centrerer vertikalt */
+            height: 100vh; /* Fylder hele højden */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling af påmindelsesteksten */
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #0048ff, #d900ff, #ff0000); /* Rød, gul og grøn */
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradient 4s ease infinite;
+            text-align: center; /* Centrerer teksten */
+        }
+
+        /* Animering af gradienten */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lav en Giv Slip Meditation I Stedet</h1>
+</body>
+</html>
