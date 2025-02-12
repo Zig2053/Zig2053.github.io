@@ -10,22 +10,23 @@
             background-color: white;
             display: flex;
             justify-content: center; /* Centrerer horisontalt */
-            align-items: center; /* Centrerer vertikalt */
+            align-items: flex-start; /* Flytter teksten højere op */
             height: 100vh; /* Fylder hele højden */
             margin: 0;
             font-family: Arial, sans-serif;
+            padding-top: 15vh; /* Justerer placeringen mere præcist */
         }
 
         /* Styling af påmindelsesteksten */
         h1 {
             font-size: 3em;
             font-weight: bold;
-            background: linear-gradient(45deg, #0048ff, #d900ff, #ff0000); /* Rød, gul og grøn */
+            background: linear-gradient(45deg, #0048ff, #d900ff, #ff0000);
             background-size: 300% 300%;
             -webkit-background-clip: text;
             color: transparent;
-            animation: gradient 4s ease infinite;
-            text-align: center; /* Centrerer teksten */
+            animation: gradient 4s ease infinite, scaleText 3s ease-in-out infinite alternate;
+            text-align: center;
         }
 
         /* Animering af gradienten */
@@ -38,6 +39,16 @@
             }
             100% {
                 background-position: 0% 50%;
+            }
+        }
+
+        /* Blød skaleringseffekt */
+        @keyframes scaleText {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
             }
         }
     </style>
